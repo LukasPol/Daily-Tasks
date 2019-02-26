@@ -1,0 +1,17 @@
+<section class="mostra-data">
+<h2>Tarefas</h2>
+
+<% @tasks.each do |task| %>
+	<% if current_user.adm == true %>
+		<%= render 'index-ver', task: task %>
+	<% else %>
+		<% if task.user == current_user %>
+			<%= render 'index-ver', task: task %>
+		<% end %>
+	<% end %>
+<% end %>
+
+</section>
+<br>
+
+<%= link_to 'New Task', new_task_path %>

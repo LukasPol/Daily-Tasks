@@ -1,0 +1,30 @@
+/* @import "scaffolds.scss"; */
+@import "my-application.scss";
+@import "welcome.scss";
+@import "devise.scss";
+
+body { 
+    font-family: sans-serif;
+    margin:0; 
+    padding:0; 
+    background-color:#ddd;
+    /* color:#000; */
+}
+header{
+    padding: 3vmin;
+}
+
+
+
+.container{
+    text-align: center;
+}
+.col-md-10{
+    margin:auto;
+}
+
+footer { 
+    margin-top: 100px;
+    background-color:#ddd;
+}
+

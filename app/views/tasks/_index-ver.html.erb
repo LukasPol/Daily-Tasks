@@ -1,0 +1,26 @@
+<section class="data">
+    <table>
+    <tr>
+        <th>Titulo</th>
+        <td><%= link_to task.title, task %></td>
+        <td>
+        <%= link_to (image_tag('lapis.png')), edit_task_path(task) %> 
+        <%= link_to (image_tag('lixeira.png')), task, method: :delete,
+            data: { confirm: 'Tem certeza que quer excluir?' } %>
+        </td>
+    </tr>
+    <tr>
+        <th>Descrição</th>
+        <td><%= task.description %></td>
+    </tr>
+    <tr>
+        <th>Data/Hora</th>
+        <td><%= task.due_date %></td>
+    </tr>
+    <tr>
+        <th>Usuário</th>
+        <td><%= task.user.name %></td>
+    </tr>
+    </table>
+    <hr>
+</section>

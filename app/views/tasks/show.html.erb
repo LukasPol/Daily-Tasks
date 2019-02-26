@@ -1,0 +1,25 @@
+<section class="data">
+  <h2>Tarefa</h2>
+  <table>
+    <tr>
+      <th>Titulo</th>
+      <td><%= @task.title %></td>
+    </tr>
+    <tr>
+      <th>Descrição</th>
+      <td><%= @task.description %></td>
+    </tr>
+    <tr>
+      <th>Data/Hora</th>
+      <td><%= @task.due_date %></td>
+    </tr>
+    <tr>
+      <th>Usuário</th>
+      <td><%= @task.user.name %></td>
+    </tr>
+  </table>
+  <hr>
+</section>
+
+<%= link_to (image_tag('lapis.png')), edit_task_path(@task) %>  |
+<%= link_to (image_tag('back.png')), tasks_path %>

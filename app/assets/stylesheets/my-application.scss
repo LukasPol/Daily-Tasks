@@ -1,0 +1,126 @@
+
+h1{
+    display: none;
+}
+
+a{
+    color:black;
+    &:hover{
+        color:black;
+        text-decoration: none
+    }
+}
+
+.logo{
+    text-shadow: 3px 3px rgba(0,0,0,.5);
+}
+
+.navbar-pages{
+    color:black;
+    a:hover{
+        font-weight: bolder;
+    }
+    .telinha-menu{
+        border:none;
+        background: none;
+        margin-right: 10px;
+    }
+}
+
+.mostra{
+    background-color: #363636;
+    box-shadow: 3.5px 3.5px rgba(0,0,0,.5);
+    padding: 5vmin;
+    color:#fff;
+
+    a{
+        color:#fff;
+    }
+    a.link_initial{
+        border: 2px solid #a60023;
+        padding: 4.5px;
+        border-radius: 14px;
+        margin-top:-10px;
+
+        &:hover{
+            padding-right: 30px;
+            padding-left: 30px;
+            background-color: #a60023;
+        }
+    }
+    &:hover{
+        box-shadow: 2.5px 2.5px rgba(0,0,0,.3);
+    }
+    
+    .data {
+        h2{
+            color:24px;
+        }
+        table{
+            margin:auto;
+            th{
+                width:120px;
+                // background-color: red;
+            }
+            td{
+                width:190px;
+                // background-color: red;
+            }
+        }
+    }
+}
+
+form {
+    margin:10px;
+    input[type = "email"], input[type = "password"], .field input[type ="text"]{
+        border:2px solid #a60023;
+        background: none;
+        display: block;
+        margin: 15px auto;
+        padding: 3px 3px;
+        text-align: center;
+        outline: none;
+        border-radius: 20px;
+        color: #fff;
+    }
+}
+
+.actions input[type = "submit"] {
+    border: 2px solid #a60023;
+    border-radius: 10px;
+    background:none;
+    transition: .25s;
+    text-transform: uppercase;
+    font-weight: bolder;
+
+    &:hover{
+        width: 250px;
+        background-color: #a60023;
+        text-decoration: bolder;
+    }
+}
+
+// Scaffold
+
+#error_explanation{
+    h2{font-size: 14px;}
+    ul li {
+    font-size: 14px;
+    list-style-type: none;
+  }
+}
+
+#mysite{
+    color: #b4b3b3;
+    &:hover{
+        color: #777;
+    }
+}
+
+.ul-footer{
+    list-style:none;
+    li{
+        display:inline;
+        margin-left: 10vmin;
+    }
+}

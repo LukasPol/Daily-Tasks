@@ -1,0 +1,25 @@
+<section class="mostra-data">
+<h2>Users</h2>
+
+<% @users.each do |user| %>
+  <section class="data">
+    <table>
+      <tr>
+        <th>Nome</th>
+        <td><%= link_to user.name, user %></td>
+        <td>
+          <%= link_to (image_tag('lapis.png')), edit_task_path(user) %> 
+          <%= link_to (image_tag('lixeira.png')), user, method: :delete,
+              data: { confirm: 'Tem certeza que quer excluir?' } %>
+        </td>
+      </tr>
+      
+    </table>
+    <hr>
+  </section>
+<% end %>
+
+</section>
+<br>
+
+<%= link_to 'New User', new_user_path %>
