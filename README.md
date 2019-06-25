@@ -1,6 +1,6 @@
 # ![Daily Tasks](/app/assets/images/logo.png)
 
-Sistema para criação de tarefas, feito em [Ruby on Rails](https://rubyonrails.org), para um desafio para Insight
+Sistema para criação de tarefas, feito em [Ruby on Rails](https://rubyonrails.org)
 
 ## Funcionamento
 
@@ -60,11 +60,3 @@ Sei que este projeto foi só para um teste de estágio, mas não deixarei ele aq
 Se quiser ajudar fique a vontade, a casa é nossa kkkk
 
 [Como colaborar](https://github.com/nfephp-org/nfephp/wiki/Contribuindo-usando-o-GitHub)
-
-```Ruby
-if leitura_Wilbert == ate_aqui or leitura_Lierbet == ate_aqui
-  puts "muito obrigado kk e por favor me contrata, nunca pedi nada à vocês! "
-else
-  puts "vlw pela oportunidade"
-end
-```
